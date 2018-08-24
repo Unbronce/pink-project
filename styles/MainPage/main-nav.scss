@@ -1,0 +1,138 @@
+.main-nav  {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;  
+}
+
+.main-nav__list  {
+  margin: 0;
+  padding: 0;
+  list-style: none;  
+}
+
+.main-nav__toggle  {
+  position: absolute;
+  top: -70px;
+  right: 0;
+  z-index: 2;
+
+  display: block;
+  width: 60px;
+  height: 70px;
+
+  background-color: transparent;
+
+  cursor: pointer;
+  border: none;
+}
+
+.main-nav--closed .main-nav__toggle::before  {
+  content: "";
+  position: absolute;
+  top: 21px;
+  right: 5px;
+
+  width: 50px;
+  height: 4px;
+
+  background-color: #fff;
+  box-shadow: 0 10px 0 0 rgb(255, 255, 255), 0 20px 0 0 rgb(255, 255, 255);
+}
+
+.main-nav--closed .main-nav__toggle:hover::before {
+  background-color: #d22856;
+  box-shadow: 0 10px 0 0 rgb(210, 40, 86), 0 20px 0 0 rgb(210, 40, 86);
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: rgba(210, 40, 86, 0.3);
+  box-shadow: 0 10px 0 0 rgba(210, 40, 86, 0.3), 0 20px 0 0 rgba(210, 40, 86, 0.3);
+}
+
+.main-nav--opened .main-nav__toggle  {
+  top: -70px;
+  right: 0;
+
+  &::before,
+  &::after  {
+    content: "";
+
+    position: absolute;
+    top: 30px;
+    right: 12px;
+
+    width: 33px;
+    height: 4px;
+
+    background-color: #fff;
+  }
+
+  &::before  {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after  {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after  {
+    background-color: #d22856;
+  }
+
+  &:active::before,
+  &:active::after  {
+    background-color: rgba(210, 40, 86, 0.3);
+  }
+  
+}
+
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: 660px;
+    
+  }
+
+  .main-nav__toggle  {
+    height: 110px;
+    top: -110px;
+  }
+
+  .main-nav--opened .main-nav__toggle {
+    top: -110px;
+
+    &::before,
+    &::after  {
+      top: 44px;
+    }
+  } 
+  
+  .main-nav--closed .main-nav__toggle::before  {
+    top: 40px;
+  }
+}
+
+@media  (max-width: $before-desktop)  {
+  .main-nav--closed .site-list__item  {
+    display: none;
+  }  
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+}
+
+@media (min-width: $desktop-width)  {
+  .main-nav  {    
+    width: auto;
+    margin: 0;
+    margin-top: 42px;
+  }
+  
+  .main-nav__toggle  {
+    display: none; 
+  }  
+}

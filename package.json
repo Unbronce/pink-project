@@ -1,0 +1,24 @@
+{
+  "name": "pink-project",
+  "version": "1.0.0",
+  "description": "Пинк\r Тест\r Ветка адаптив\r ключ\r +test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Unbronce/pink-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Unbronce/pink-project/issues"
+  },
+  "homepage": "https://github.com/Unbronce/pink-project#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
