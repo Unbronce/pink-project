@@ -1,0 +1,64 @@
+.download-list  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 28px;
+  padding: 0;
+  width: 205px;
+  list-style: none;
+  min-height: 56px;
+}
+
+.download-list__item {
+  &:nth-child(1)  {
+    background-image: url("../../img/apple.svg");
+    background-repeat: no-repeat;
+    width: 46px;
+    height: 56px;
+  }
+
+  &:nth-child(2)  {
+    background-image: url("../../img/android.svg");
+    background-repeat: no-repeat;
+    width: 43px;
+    height: 47px;
+  }
+
+  &:nth-child(3)  {
+    background-image: url("../../img/microsoft.svg");
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 41px;
+  }
+}
+
+.download-list__item a  {
+  display: block;
+  width: 46px;
+  height: 56px;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width)  {
+  .download-list  {
+    margin-bottom: 41px;
+  }
+
+  .download-list__item {
+    &:nth-child(2)  {
+      background-image: url("../../img/android-transparent.svg");
+    }
+  }
+}
+
+@media (min-width: $desktop-width)  {
+  .download-list  {
+    margin-bottom: 60px;
+  }
+  
+  .download-list__item {
+    &:nth-child(2)  {
+      background-image: url("../../img/android.svg");
+    }
+  }
+}

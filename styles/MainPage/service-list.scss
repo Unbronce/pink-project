@@ -1,0 +1,126 @@
+.service-list  {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;  
+}
+
+.service-list__item  {
+  position: relative;
+
+  &:nth-child(3)::after {
+    content: "";
+    position: absolute;
+    top: 147px; 
+    left: 0;    
+    height: 277px;
+    width: 100%;    
+    background: url("../../img/iphone_screen_mobile.png") 50% 0 no-repeat;
+  }
+}
+
+.service-list__caption  {
+  margin: 0 0 15px;  
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.service-list__description  {
+  margin: 0;
+  padding: 0 12px;
+  color: #000000;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 38px;
+}
+
+@media  (min-width: $tablet-width)  {
+  .service-list  {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: left;
+  }
+
+  .service-list__item {
+    width: 310px;
+  }
+
+  .service-list__description  {
+    padding: 0;
+  }
+
+  .service-list__item  {
+  
+    &:nth-child(3)::after {
+      content: "";
+      position: absolute;
+      top: -339px; 
+      left: -310px;    
+      height: 480px;
+      width: 100%;    
+      background: url("../../img/iphone_screen_tablet.png") 0 0 no-repeat;
+    }
+  }
+}
+
+@media  (min-width: $desktop-width)  {
+  .service-list  {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    width: 872px;
+  }
+
+  .service-list__item  {
+    width: 240px;
+
+    &:nth-child(1)::after {
+      content: "";
+      position: absolute;
+      top: -360px; 
+      left: 4px;    
+      height: 301px;
+      width: 100%;    
+      background: url("../../img/mood.png") -31px 0 no-repeat;
+    }
+    
+    &:nth-child(2)::after {
+      content: "";
+      position: absolute;
+      top: -360px; 
+      left: 4px;    
+      height: 301px;
+      width: 100%;    
+      background: url("../../img/world.png") -31px 0 no-repeat;
+    }
+  
+    &:nth-child(3)::after {
+      content: "";
+      position: absolute;
+      top: -360px; 
+      left: 4px;    
+      height: 301px;
+      width: 100%;    
+      background: url("../../img/friends.png") -31px 0 no-repeat;
+    }
+  }
+
+  .service-list__caption {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .service-list__description  {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
+} 
+
+
