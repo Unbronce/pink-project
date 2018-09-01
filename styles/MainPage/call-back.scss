@@ -1,0 +1,129 @@
+.call-back  {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  text-align: center;
+
+  &__list  {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__intro  {
+    margin: 50px 0 44px;
+    color: #283645;
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  &__call,
+  &__write,
+  &__address  {
+    margin: 0;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+  }
+
+  &__number,
+  &__mail,
+  &__visit-us  {
+    margin: 0;
+    color: #d22856;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 300;
+  }
+
+  &__call {
+    margin-bottom: 11px;
+  }
+
+  &__write  {
+    margin-bottom: 12px;
+  }
+
+  &__address  {
+    margin-bottom: 9px;
+  }
+
+  &__number {
+    margin-bottom: 28px;
+  }
+
+  &__mail  {
+    margin-bottom: 27px;
+  }
+}
+
+@media  (min-width: $tablet-width)  {
+  .call-back  {
+    
+    &__intro  {
+      margin: 54px 0 57px;
+    }
+    
+    &__list  {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      width: 620px;
+      margin: 0 auto;
+    }
+
+    &__call,
+    &__write {
+      margin-bottom: 14px;
+    }
+
+    &__visit-us {
+      margin-bottom: 12px;
+    }
+
+    &__number,
+    &__mail  {
+      margin-bottom: 48px;
+    }
+    
+  }
+}
+
+
+@media  (min-width: $desktop-width)  {
+  
+  .call-back  {
+    &__intro  {
+      margin: 74px 0 70px;
+      font-size: 50px;
+      line-height: 50px;
+    }
+
+    &__list  {
+      justify-content: space-around;
+      flex-wrap: wrap;
+      width: 940px;
+      margin: 0 auto;
+    }
+
+    &__call,
+    &__write,
+    &__address  {
+      margin-bottom: 30px;
+    }
+
+    &__number,
+    &__mail,
+    &__visit-us  {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// <p class="call-back__intro">Остались вопросы?<br> Свяжитесь с нами!</p>
+//       <p class="call-back__call">Звоните:</p>
+//       <p class="call-back__number">+7(812)555-66-66</p>
+//       <p class="call-back__write">Пишите:</p>
+//       <p class="call-back__mail">mail@htmlacademy.ru</p>
+//       <p class="call-back__address">Приезжайте в гости:</p>
+//       <p class="call-back__street">ул. Большая<br> Конюшенная, 19/8</p>

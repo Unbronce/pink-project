@@ -1,0 +1,300 @@
+.price  {
+  padding-top: 138px;
+  padding-bottom: 56px;  
+  background: url("../../img/price-background.jpg") no-repeat;
+
+  &__wrapper  {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__switcher  {
+    display: none;
+  }
+
+  &__list  {
+    width: 840px;
+    margin-bottom: 44px;
+    box-sizing: border-box;
+    transform: translateX(-260px);
+    border-collapse: collapse;    
+    text-transform: uppercase;    
+  }
+
+  &__list-head  {
+    color: #ffffff;
+  }
+
+  &__value  {
+    min-width: 276px;
+    height: 94px;    
+    background-color: #283645;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;  
+    border-left: 2px solid #e5e5e5;
+    border-right: 2px solid #e5e5e5;
+    border-bottom: 2px solid #e5e5e5;
+    
+    &--label  {
+      position: relative;
+
+      &::before  {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 74px;
+        height: 73px;
+        background: url("../../img/ribbon-hit.png") no-repeat;
+      }
+    }
+  }
+
+  &__cost  {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px;
+  }
+
+  &__list-body  {
+    background-color: #fff;    
+  }
+
+  &__field  {
+    padding-left: 22px;
+    min-width: 276px;
+    height: 59px;
+    color: #283645;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    border-left: 2px solid #e5e5e5;
+    border-right: 2px solid #e5e5e5;
+    border-bottom: 2px solid #e5e5e5;
+
+    
+
+    &--yes  {
+      background: url("../../img/yes.svg") 90% 50% no-repeat;
+    }
+
+    &--no  {
+      background: url("../../img/no.svg") 90% 50% no-repeat;
+    }
+  }
+    
+}
+
+
+@media  (max-width: $only-mobile-width)  {
+  .price__items  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .price__value  {
+    &--disabled  {
+      min-width: 0;
+      margin: 0;
+      padding: 0;
+      font-size: 0;
+      line-height: 0;
+      border: none;
+      background: transparent;
+    }
+  }
+
+  .price__field  {
+    &--disabled  {
+      min-width: 0;
+      margin: 0;
+      padding: 0;
+      font-size: 0;
+      line-height: 0;
+      border: none;
+      background: transparent;
+    }
+  }
+
+  #price-btn-1:checked ~ .price__list  {
+    transform: translateX(260px);
+    transition: 0.5s;
+  }
+
+  #price-btn-2:checked ~ .price__list  {
+    transform: translateX(0px);
+    transition: 0.5s;
+  }
+
+  #price-btn-3:checked ~ .price__list  {
+    transform: translateX(-260px);
+    transition: 0.5s;
+  }
+
+  #price-btn-1:checked ~ .price__nav label[for="price-btn-1"],
+  #price-btn-2:checked ~ .price__nav label[for="price-btn-2"],
+  #price-btn-3:checked ~ .price__nav label[for="price-btn-3"] {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border: 3px solid #283645;
+  }
+}
+
+@media  (min-width: $tablet-width)  {
+  .price  {
+    padding-top: 91px;
+    padding-bottom: 35px;  
+    background: url("../../img/price-background.jpg") 0 32% no-repeat;
+    
+  
+    &__wrapper  {
+      width: 620px;
+      margin: 0 auto;
+    }
+  
+    &__switcher  {
+      display: none;
+    }
+  
+    &__list  {
+      width: 616px;
+      margin-bottom: 44px;
+      box-sizing: border-box;
+      transform: none;  
+    }
+  
+      
+    &__value  {
+      min-width: 153px;
+      height: 75px;    
+      font-size: 16px;
+
+      &--disabled  {
+        min-width: 0;
+        margin: 0;
+        padding: 0;
+        font-size: 0;
+        line-height: 0;
+        border: none;
+        background: transparent;        
+      }
+      
+      &--label  {
+        position: relative;
+  
+        &::before  {
+          position: absolute;
+          content: "";
+          top: 0;
+          left: 0;
+          width: 61px;
+          height: 61px;
+          background: url("../../img/ribbon-hit.png") no-repeat;
+          background-size: 58px;
+
+        }
+      }
+    }
+  
+    &__cost  {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 30px;
+    }
+  
+  
+    &__field  {
+      min-width: 153px;
+      height: 45px;
+      font-size: 0;
+      line-height: 0;
+      text-transform: none;
+
+      &--enabled  {
+        padding-left: 15px;
+        text-align: left;
+        color: #283645;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+      }
+      
+      &--yes  {
+        background: url("../../img/yes.svg") 50% 50% no-repeat;
+      }
+  
+      &--no  {
+        background: url("../../img/no.svg") 50% 50% no-repeat;
+      }
+  
+    }
+      
+  }
+
+  
+  .price__nav  {
+    display: none;
+  }
+}
+
+@media  (min-width: $desktop-width)  {
+  .price  {
+    padding-top: 159px;
+    padding-bottom: 60px;
+    background: url("../../img/price-background.jpg") 0 32% no-repeat;
+    background-size: cover;
+    
+  
+    &__wrapper  {
+      width: 960px;
+      margin: 0 auto;
+    } 
+   
+  
+    &__list  {
+      width: 938px;
+      margin-bottom: 44px;
+    }
+  
+      
+    &__value  {
+      min-width: 234px;
+      height: 94px;    
+      font-size: 18px;
+      
+      
+      &--label  {
+        position: relative;
+  
+        &::before  {
+          position: absolute;
+          content: "";
+          top: 0;
+          left: 0;
+          width: 74px;
+          height: 74px;
+          background: url("../../img/ribbon-hit.png") no-repeat;
+          background-size: 74px;
+
+        }
+      }
+    }
+  
+    &__cost  {
+      margin: 0;
+      font-size: 24px;
+    }
+  
+  
+    &__field  {
+      min-width: 234px;
+      height: 59px;
+    }
+      
+  }
+}

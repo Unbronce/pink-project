@@ -1,0 +1,77 @@
+.reviews > input[type="radio"]  {
+  display: none;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.reviews__name {
+  margin: 49px auto 21px;
+  text-align: center;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.reviews__review {
+  margin: 0 0 30px;
+  color: #283645;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+
+}
+
+.reviews__occupation {
+  display: none;
+}
+
+
+@media  (min-width: $tablet-width)  {
+  .reviews__wrapper  {
+    display: flex;
+    flex-direction: column;
+
+  }
+  .reviews__name  {
+    order: 1;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .reviews__review  {    
+    order: 0;    
+    margin: 54px 0 44px;
+    font-size: 18px;
+  }
+
+  .reviews__occupation  {
+    display: block;
+    order: 2;   
+    margin: 0 0 42px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+}
+
+@media  (min-width: $desktop-width)  {
+  .reviews  {
+    background: url("../../img/quotes.svg") center 72px no-repeat; 
+  }
+
+  .reviews__review  {    
+    margin: 192px auto 44px;
+    width: 667px;
+  }
+
+  .reviews__occupation  {
+    margin: 0 0 35px;
+  }
+} 

@@ -1,0 +1,59 @@
+.slider  {
+  // position: relative;
+}
+
+.slider__controls  {
+  // position: absolute;
+  // left: 42%;
+  // z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60px;  
+  font-size: 0;
+  line-height: 12px;
+  margin: 0 auto;
+}
+
+.slider__controls label  {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  vertical-align: top;
+  background-color: #bec3c7;
+  border-radius: 50%;
+  cursor: pointer; 
+}
+
+
+.slider__slide {
+  display: none;     
+}
+
+
+#btn-1:checked ~ .slider #slide1,
+#btn-2:checked ~ .slider #slide2,
+#btn-3:checked ~ .slider #slide3 {  
+  display: block;
+}
+
+
+#btn-1:checked ~ .slider label[for="btn-1"],
+#btn-2:checked ~ .slider label[for="btn-2"],
+#btn-3:checked ~ .slider label[for="btn-3"] {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border: 3px solid #283645;
+} 
+
+@media  (min-width: $tablet-width)  {
+  .reviews__slider  {
+    margin-bottom: 23px;
+  }
+}
+
+
+@media  (min-width: $desktop-width)  {
+  
+}

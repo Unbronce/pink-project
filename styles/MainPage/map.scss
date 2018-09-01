@@ -1,0 +1,36 @@
+.map  {
+  position: relative;
+  height: 220px;
+  background: url("../../img/map.jpg") 47% 54% no-repeat;
+
+  &::after  {
+    position: absolute;
+    content: "";
+    background: url("../../img/triangle-white-footer.png") 50% -67px no-repeat;    
+    height: 123px;
+    width: 100%;
+  }
+}
+
+@media  (min-width: $tablet-width)  {
+  .map  {
+    height: 390px;
+    background: url("../../img/map.jpg") 45.5% 54% no-repeat;
+  }
+}
+
+@media  (min-width: $desktop-width)  {
+  .map  {
+    height: 520px;
+    background: url("../../img/map.jpg") 45% 53.5% no-repeat;    
+
+    &::after  {
+      position: absolute;
+      content: "";
+      background: url("../../img/triangle-white-footer.png") 50% 0 no-repeat;    
+      height: 123px;
+      width: 100%;
+    }
+  } 
+ 
+}

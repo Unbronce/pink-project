@@ -1,0 +1,19 @@
+.facts  {
+  display: none;
+}
+
+@media  (min-width: $tablet-width)  {
+  .facts  {
+    display: block;
+    padding: 0 20px;
+    background: url("../../img/timer.png") 10% 50% no-repeat;    
+  }
+}
+
+@media (min-width: $desktop-width)  {
+  .facts  {    
+    background: url("../../img/timer-desktop.png") 15% 0 no-repeat; 
+    background-color: #f2f2f2;   
+  }
+}
+
