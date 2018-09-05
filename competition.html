@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Пинк</title>  
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-direction" content="telephone=no"> 
+  <link href="/styles/CompetitionPage/competitionpage.scss" rel="stylesheet">
+</head>
+<body>
+  <header class="page-header page-header--transparent">
+    <a class="page-header__logo">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="/img/desktop-logo.svg">
+        <source media="(min-width: 660px)" srcset="/img/tablet-logo.svg">
+        <img class="page-header__logo-image" src="/img/mobile-logo.svg"  alt="Пинк">  
+      </picture>
+    </a>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button> 
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="competition.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Html Academy</a>
+            </li>
+          </ul>
+        </div>           
+      </nav>    
+  </header> 
+  <main class="page-competiton">
+    <section class="competiton-intro">
+      <h2 class="competiton-intro__description">Конкурс на самое безбашенное<br> путешествие с Пинк</h2>
+    </section>
+    <section class="form">
+      <h2 class="visually-hidden">Конкурс</h2>
+      <form action="echo" class="form__competition" method="POST">
+        <div class="form__container">
+              <p class="form__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span> Пожалуйста, заполните форму ниже:</span></p>
+        </div>   
+        <div class="form__container">
+          <fieldset class="form__full-name">
+                <label class="form__surname" for="surname">Фамилия:</label>
+                <input class="form__surname-field" type="text" name="" id="surname" placeholder="Укажите фамилию *">
+                <label class="form__name" for="name">Имя:</label>
+                <input class="form__name-field" type="text" name="" id="name" placeholder="Введите ваше имя *">
+                <label class="form__patronimic" for="patronimic">Отчество:</label>
+                <input class="form__patronimic-field" type="text" name="" id="patronimic" placeholder="Ну и отчество тоже">
+          </fieldset>
+        </div>
+        <div class="form__container form__container--style">
+          <fieldset class="form__achvments">
+            <legend class="form__caption">Ваши безбашенные<br> достижения в путешествии</legend>              
+            <input class="visually-hidden form__checkbox" type="checkbox" name="selfie" id="selfie" checked>
+            <label class="form__achivment" for="selfie">Сделал селфи с акулой</label>
+            <input class="visually-hidden form__checkbox" type="checkbox" name="tanned" id="tanned" checked>
+            <label class="form__achivment" for="tanned">Обгорел на пляже</label>
+            <input class="visually-hidden form__checkbox" type="checkbox" name="Chuck" id="Chuck">
+            <label class="form__achivment" for="Chuck">Видел Чака Норриса</label>
+            <input class="visually-hidden form__checkbox" type="checkbox" name="souvenir" id="souvenir">
+            <label class="form__achivment" for="souvenir">Накупил сувениров</label>
+            <input class="visually-hidden form__checkbox" type="checkbox" name="tower" id="tower" checked>
+            <label class="form__achivment" for="tower">Удержал башню</label>
+            <input class="visually-hidden form__checkbox" type="checkbox" name="hotel" id="hotel">
+            <label class="form__achivment" for="hotel">Разгромил отель</label>              
+          </fieldset>
+        </div>
+        <div class="form__container">
+            <fieldset class="form__contacts">
+                <label class="form__number" for="surname">Номер телефона</label>
+                <input class="form__number-field" type="text" name="" id="number" placeholder="Номер телефона">
+                <label class="form__post" for="post">Адрес почты</label>
+                <input class="form__post-field" type="text" name="post" id="name" placeholder="Введите почту *">
+            </fieldset>
+        </div>
+        <div class="form__container form__container--style">
+            <fieldset class="form__platforms">
+              <legend class="form__caption">С каким приложением<br> путешествовали?</legend>     
+              <input class="visually-hidden form__radio" type="radio" name="platform" id="ios" checked>
+              <label class="form__platform" for="ios">Pink для iOS</label>    
+              <input class="visually-hidden form__radio" type="radio" name="platform" id="android">
+              <label class="form__platform" for="android">Pink для Android</label>      
+              <input class="visually-hidden form__radio" type="radio" name="platform" id="windows">
+              <label class="form__platform" for="windows">Windows Phone</label>                     
+            </fieldset>
+        </div>
+        <div class="form__container">
+            <fieldset class="form__emotion">
+              <legend class="form__caption">Опишите свои эмоции</legend> 
+              <label class="visually-hidden" for="comment">Оставте Ваш комментарий</label>
+              <textarea class="form__comment" name="comment" id="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>            
+            </fieldset>
+        </div>        
+        <button class="form__btn" type="submit">Отправить форму</button>
+        <p class="form__attention"><span>*</span> — обязательные поля</p>
+      </form>
+    </section>
+  </main>  
+  <footer class="page-footer">    
+    <section class="footer-bottom footer-bottom--block">
+      <div class="footer-bottom__wrapper">
+        <h2 class="visually-hidden">Информация для пользователя</h2>
+        <a class="footer-bottom__logo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="/img/desktop-logo__bottom.svg">
+            <img class="footer-bottom__logo-image" src="/img/tablet-logo__bottom.svg"  alt="Пинк">  
+          </picture>
+        </a>
+        <ul class="footer-bottom__list social-list">
+          <li class="social-list__item">
+            <a class="social-list__link" href="#">
+              <span class="visually-hidden">Твиттер</span>
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18" height="14" viewBox="0 0 17.5 14.7" style="enable-background:new 0 0 17.5 14.7;" xml:space="preserve">
+                <g id="W6EeEF_1_">
+                  <g>
+                    <path fill="#d22856" d="M11.3,0.2C13-0.3,14.4,0.4,15,1.3c0.7-0.2,1.4-0.5,2.1-0.7c0,0.8-0.5,1.5-0.9,1.7c0.7,0.2,1.3-0.5,1.3-0.5
+                      c-0.2,1-1,1.7-1.6,2c-0.2,6.6-3.3,11-10.4,10.8c-0.5,0,0.1,0-0.5,0c-0.4,0-4.3-0.4-5-1.8c2.3,0.2,4-0.4,4.8-1.1
+                      c-1-0.3-2.8-0.5-3.1-2.9C2.1,8.9,2.3,9,3,8.9C1.8,8.1,0.4,7.4,0.5,5.2c0.3,0.3,1.1,0.5,1.4,0.5c-0.7-0.2-2-3.3-0.9-4.8
+                      c1.9,1.8,3.8,3.5,7.4,3.7C8.5,2.3,9.5,0.8,11.3,0.2z"/>
+                  </g>
+                </g>
+                </svg>
+            </a>          
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="#">
+              <span class="visually-hidden">Фейсбук</span>
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="9" height="18" viewBox="0 0 8.7 18.9" style="enable-background:new 0 0 8.7 18.9;" xml:space="preserve">
+                <path fill="#d22856" d="M6.3,3.4c0.8,0,1.6,0,2.4,0c0-1.1,0-2.2,0-3.4c-1,0-1.9,0-2.9,0C2.7,0.2,1.5,2.4,1.9,6.1H0v3.5h2c0,3.1,0,6.2,0,9.3
+                  c1.3,0,2.6,0,3.8,0c0-3.1,0-6.2,0-9.3h2.9V6.1H5.8C5.8,5.1,5.8,3.7,6.3,3.4z"/>
+                </svg>              
+            </a>          
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="#">
+              <span class="visually-hidden">Ютуб</span>
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15" height="13" viewBox="0 0 14.6 14" style="enable-background:new 0 0 14.6 14;" xml:space="preserve">
+                <path fill="#d22856" d="M1.8,13.8c-1,0.5-1.8,0-1.8-1.1V1.3c0-1.1,0.8-1.6,1.8-1.1l12.1,5.9c1,0.5,1,1.3,0,1.7L1.8,13.8z"/>
+                </svg>              
+            </a>          
+          </li>
+        </ul>
+        <div class="footer-bottom__designed">
+          <p class="footer-bottom__text">Разработано</p>
+          <a href="#" class="footer-bottom__link">
+            <span class="visually-hidden">Html Academy</span>
+            <svg version="1.1" width="27" height="34" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 27 34" style="enable-background:new 0 0 27 34;" xml:space="preserve">
+              <path class="st0" fill="#d22856" d="M13.6,0l-0.1,0L0,1.4v24.4l13.5,7.9L27,25.8V1.4L13.6,0z M25.2,24.8l-11.7,6.9L1.8,24.8v-10l11.7,6.9l0,1.2
+                l-8-4.7l0,1.2l8,4.8l0,1.3l-8-4.7l0,1.2l8,4.8h0l8.1-4.8v-1.2l0,0v-0.4v-0.5v-3l3.6-2.1V24.8z M25.2,13.4L22,15.2h0l-1.5,0.9
+                l-7.1-4.2l0,1.2l6,3.5l-0.1,0l-0.1,0.1l-0.9,0.5l-5-2.9l0,1.2l3.9,2.3l-0.9,0.6l0,0l-3-1.7l0,1.2l2,1.1l-2,1.2L1.8,13.5l11.6-6.9v0
+                L25.2,13.4z M25.2,12.1L13.4,5.3v0l0,0l0,0v0L1.8,12.1V3l11.7-1.2L25.2,3V12.1z"/>
+            </svg>     
+          </a>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <script src="js/nav-toggle-button.js"></script>
+</body>
+</html>
+

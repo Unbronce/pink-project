@@ -1,0 +1,240 @@
+.form  {
+
+  &__container  {
+    margin: 0 auto;
+
+    &--style  {
+      padding: 41px 0 50px;
+      margin-bottom: 33px;
+      background-color: #f2f2f2;
+    }
+  }
+
+  &__text  {
+    margin: 54px auto 49px;
+    width: 280px;
+    text-align: center;
+    color: #283645;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+
+    & span  {
+      display: none;
+    }
+  }
+
+  &__full-name,
+  &__contacts,
+  &__emotion  {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 44px;
+    padding: 0;
+    width: 280px;
+    border: none;    
+  }
+
+  &__surname,
+  &__name,
+  &__patronimic,
+  &__number,
+  &__post  {
+    padding-left: 23px;
+    margin-bottom: 4px;
+    color: #d22856;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
+  &__surname-field,
+  &__name-field,
+  &__patronimic-field,
+  &__number-field,
+  &__post-field,
+  &__comment  {
+    @include placeholder {
+      color: #283645;
+    }
+    padding: 0 20px;
+    width: 100%;
+    height: 59px;
+    border: 2px solid #e5e5e5;
+    color: #283645;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 21px;
+
+    &:last-child  {
+      margin-bottom: 0;
+    }
+  }
+
+  //achivments
+  
+
+  &__achvments,
+  &__platforms  {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    margin: 0 auto;
+    border: none;
+  }
+
+  &__caption  {
+    margin-bottom: 43px;
+    text-align: center;
+    color: #d22856;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+
+  &__achivment,
+  &__platform  {
+    position: relative;
+    padding-left: 70px;
+    margin-bottom: 49px;
+    color: #283645;
+    font-size: 16px;
+    line-height: 30px;  
+    cursor: pointer;
+    
+    &:last-child  {
+      margin-bottom: 0;
+    }
+  }  
+  
+  &__comment  {
+    width: 100%;
+    min-height: 197px;
+    font: inherit;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    resize: none; 
+  }
+
+  &__btn  {
+    display: block;
+    margin: 0 auto 38px;
+    width: 280px;
+    height: 59px;
+    color: #ffffff;
+    font: inherit;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    border: 2px solid #2aab6d;
+    background-color: #2aab6d;
+  }
+
+  &__attention  {
+    margin-bottom: 16px;
+    text-align: center;
+    color: #283645;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+    & span  {
+      color: #d22856;
+    }
+  }
+  
+}
+
+.form__checkbox:checked + .form__achivment::before  {
+  position: absolute;
+  content: "";
+  left: -33px;
+  top: -5px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #e5e5e5;  
+  background: url("../../img/checked.svg") 50% 50% no-repeat;
+  background-color: #ffffff;
+}
+
+.form__checkbox + .form__achivment::before  {
+  position: absolute;
+  content: "";
+  left: -33px;
+  top: -5px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+}
+
+.form__radio:checked + .form__platform::before  {
+  position: absolute;
+  content: "";
+  left: -33px;
+  top: -5px;
+  width: 36px;
+  height: 36px;
+  border: 2px solid #e5e5e5;  
+  border-radius: 100%;
+  background-color: #ffffff;
+}
+
+.form__radio:checked + .form__platform::after  {
+  position: absolute;
+  content: "";
+  left: -21px;
+  top: 7px;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background-color: #d22856;
+}
+
+.form__radio + .form__platform::before  {
+  position: absolute;
+  content: "";
+  left: -33px;
+  top: -5px;
+  width: 36px;
+  height: 36px;
+  border: 2px solid #e5e5e5;
+  border-radius: 100%;
+  background-color: #ffffff;
+}
+
+@media  (min-width: $tablet-width)  {
+  .form  {
+    width: 620px;
+
+    &__text  {
+      margin: 100px 0 76px;
+      font-size: 18px;
+      padding: 0 60px;
+
+      & span  {
+        display: block;
+      }
+    }
+  }
+}
+
+@media  (min-width: $desktop-width)  {
+  .form  {
+    width: 940px;
+
+    &__text  {
+      margin-bottom: 89px;
+      padding: 0 90px;
+
+      & span  {
+        display: inline;
+      }
+    }
+  }  
+}

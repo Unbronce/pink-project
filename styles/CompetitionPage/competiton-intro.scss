@@ -1,0 +1,52 @@
+.competiton-intro {
+  margin-top: -70px;
+  height: 237px;
+  padding: 100px 0 0;
+  text-align: center;
+  background: url("../../img/background-image.jpg") center -8.5% no-repeat;  
+  background-size:  766px, cover;
+  background-color: #283645;
+
+  &__description  {
+    margin: 0 auto;
+    width: 230px;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 300;
+  }
+}
+
+@media (min-width: $tablet-width)  {
+  .competiton-intro  {
+    margin-top: -110px;
+    padding: 191px 0 0;
+    height: 440px;
+    background: url("../../img/background-image.jpg") center 0% no-repeat;  
+    background-size:  1190px, cover;
+    background-color: #283645;
+
+    &__description  {
+      width: 475px;
+      font-size: 50px;
+      line-height: 54px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width)  {
+  .competiton-intro  {
+    margin-top: -110px;
+    padding: 184px 0 0;
+    height: 395px;
+    background: url("../../img/back-desktop-jpg.jpg") center 0% no-repeat;  
+    background-size:  2545px, cover;
+    background-color: #283645;
+
+    &__description  {
+      width: auto;
+      margin: 0;
+      font-size: 50px;
+      line-height: 54px;
+    }
+  }
+}
