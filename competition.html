@@ -44,46 +44,62 @@
     </section>
     <section class="form">
       <h2 class="visually-hidden">Конкурс</h2>
-      <form action="echo" class="form__competition" method="POST">
-        <div class="form__container">
-              <p class="form__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span> Пожалуйста, заполните форму ниже:</span></p>
-        </div>   
-        <div class="form__container">
+      <div class="form__container">
+          <p class="form__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span> Пожалуйста, заполните форму ниже:</span></p>
+      </div>  
+      <form action="echo" class="form__competition" method="POST">         
+        <div class="form__container form__container--name-order">
           <fieldset class="form__full-name">
-                <label class="form__surname" for="surname">Фамилия:</label>
-                <input class="form__surname-field" type="text" name="" id="surname" placeholder="Укажите фамилию *">
-                <label class="form__name" for="name">Имя:</label>
-                <input class="form__name-field" type="text" name="" id="name" placeholder="Введите ваше имя *">
-                <label class="form__patronimic" for="patronimic">Отчество:</label>
-                <input class="form__patronimic-field" type="text" name="" id="patronimic" placeholder="Ну и отчество тоже">
+            <div class="form__items">
+              <label class="form__surname" for="surname">Фамилия:</label>
+              <input class="form__surname-field" type="text" name="" id="surname" placeholder="Укажите фамилию *">
+            </div>
+            <div class="form__items">
+              <label class="form__name" for="name">Имя:</label>
+              <input class="form__name-field" type="text" name="" id="name" placeholder="Введите ваше имя *">
+            </div>
+            <div class="form__items">
+              <label class="form__patronimic" for="patronimic">Отчество:</label>
+              <input class="form__patronimic-field" type="text" name="" id="patronimic" placeholder="Ну и отчество тоже">
+            </div>
           </fieldset>
         </div>
-        <div class="form__container form__container--style">
+        <div class="form__container form__container--style form__container--achvments-order">
           <fieldset class="form__achvments">
-            <legend class="form__caption">Ваши безбашенные<br> достижения в путешествии</legend>              
-            <input class="visually-hidden form__checkbox" type="checkbox" name="selfie" id="selfie" checked>
-            <label class="form__achivment" for="selfie">Сделал селфи с акулой</label>
-            <input class="visually-hidden form__checkbox" type="checkbox" name="tanned" id="tanned" checked>
-            <label class="form__achivment" for="tanned">Обгорел на пляже</label>
-            <input class="visually-hidden form__checkbox" type="checkbox" name="Chuck" id="Chuck">
-            <label class="form__achivment" for="Chuck">Видел Чака Норриса</label>
-            <input class="visually-hidden form__checkbox" type="checkbox" name="souvenir" id="souvenir">
-            <label class="form__achivment" for="souvenir">Накупил сувениров</label>
-            <input class="visually-hidden form__checkbox" type="checkbox" name="tower" id="tower" checked>
-            <label class="form__achivment" for="tower">Удержал башню</label>
-            <input class="visually-hidden form__checkbox" type="checkbox" name="hotel" id="hotel">
-            <label class="form__achivment" for="hotel">Разгромил отель</label>              
+            <legend class="form__caption">Ваши безбашенные<br> достижения в путешествии</legend>  
+            <div class="form__wrapper">
+                <input class="visually-hidden form__checkbox" type="checkbox" name="selfie" id="selfie" checked>
+                <label class="form__achivment form__achivment--selfie-order" for="selfie">Сделал селфи с акулой</label>
+                <input class="visually-hidden form__checkbox" type="checkbox" name="tanned" id="tanned" checked>
+                <label class="form__achivment form__achivment--tanned-order" for="tanned">Обгорел на пляже</label>
+                <input class="visually-hidden form__checkbox" type="checkbox" name="Chuck" id="Chuck">
+                <label class="form__achivment form__achivment--chuck-order" for="Chuck">Видел Чака Норриса</label>
+                <input class="visually-hidden form__checkbox" type="checkbox" name="souvenir" id="souvenir">
+                <label class="form__achivment form__achivment--souvenir-order" for="souvenir">Накупил сувениров</label>
+                <input class="visually-hidden form__checkbox" type="checkbox" name="tower" id="tower" checked>
+                <label class="form__achivment form__achivment--tower-order" for="tower">Удержал башню</label>
+                <input class="visually-hidden form__checkbox" type="checkbox" name="hotel" id="hotel">
+                <label class="form__achivment form__achivment--hotel-order" for="hotel">Разгромил отель</label>              
+            </div> 
           </fieldset>
         </div>
-        <div class="form__container">
-            <fieldset class="form__contacts">
-                <label class="form__number" for="surname">Номер телефона</label>
-                <input class="form__number-field" type="text" name="" id="number" placeholder="Номер телефона">
-                <label class="form__post" for="post">Адрес почты</label>
-                <input class="form__post-field" type="text" name="post" id="name" placeholder="Введите почту *">
+        <div class="form__container form__container--contacts-order">
+            <fieldset class="form__contacts ">
+                <legend class="form__caption form__caption--display">Контактная информация</legend>
+              <div class="form__wrapper">
+                <div class="form__items form__items--reverse form__items--number">
+                  <label class="form__number" for="number">Номер телефона</label>
+                  <input class="form__number-field" type="text" name="" id="number" placeholder="Номер телефона">
+                </div>
+                <div class="form__items form__items--reverse form__items--post">
+                  <label class="form__post" for="post">Адрес почты</label>
+                  <input class="form__post-field" type="text" name="post" id="post" placeholder="Введите почту *">
+                </div>
+              </div>  
+                               
             </fieldset>
         </div>
-        <div class="form__container form__container--style">
+        <div class="form__container form__container--style form__container--platforms-order">
             <fieldset class="form__platforms">
               <legend class="form__caption">С каким приложением<br> путешествовали?</legend>     
               <input class="visually-hidden form__radio" type="radio" name="platform" id="ios" checked>
@@ -94,15 +110,17 @@
               <label class="form__platform" for="windows">Windows Phone</label>                     
             </fieldset>
         </div>
-        <div class="form__container">
+        <div class="form__container form__container--emotion-order">
             <fieldset class="form__emotion">
               <legend class="form__caption">Опишите свои эмоции</legend> 
               <label class="visually-hidden" for="comment">Оставте Ваш комментарий</label>
               <textarea class="form__comment" name="comment" id="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>            
             </fieldset>
-        </div>        
-        <button class="form__btn" type="submit">Отправить форму</button>
-        <p class="form__attention"><span>*</span> — обязательные поля</p>
+        </div>    
+        <div class="form__container form__container--bottom-order">
+          <button class="form__btn" type="submit">Отправить форму</button>
+          <p class="form__attention"><span>*</span> — обязательные поля</p>
+        </div>  
       </form>
     </section>
   </main>  

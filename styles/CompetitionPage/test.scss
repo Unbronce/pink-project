@@ -1,0 +1,227 @@
+
+
+@media  (min-width: $tablet-width)  {
+  .form  {
+    width: 620px;
+    margin: 0 auto;
+
+    &__competition  {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__text  {
+      margin: 100px auto 76px;
+      width: 100%;
+      font-size: 18px;
+      padding: 0 60px;
+
+      & span  {
+        display: block;
+      }
+    }
+    
+    &__full-name,
+    &__contacts,
+    &__emotion,
+    &__achvments,
+    &__platforms  {      
+      width: 620px; 
+    }
+    
+
+    &__full-name  {  
+      order: 2;
+      margin-bottom: 0;  
+    }
+
+    &__items  {
+        display: flex;
+        flex-direction: row;
+        
+      &--reverse  {
+        flex-direction: column-reverse;
+      }
+    }
+
+    &__surname,
+    &__name,
+    &__patronimic,
+    &__number,
+    &__post  {
+      padding-right: 22px;      
+      padding-left: 0;
+      margin-bottom: 0;      
+    }
+
+    &__surname,
+    &__name,
+    &__patronimic  {      
+      line-height: 59px;
+    }
+
+    &__surname,
+    &__name  {
+      margin-bottom: 56px;
+    }
+
+    &__patronimic  {
+      margin-bottom: 19px;
+    }
+    &__caption  {
+      padding: 0 33px;
+      margin-bottom: 59px;
+
+      &--display  {
+        display: block;
+      }
+    }
+    &__caption  br  {
+      display: none;
+    }
+
+    &__achvments,
+    &__platforms,
+    &__emotion,
+    &__contacts  {
+      padding: 0;
+      margin: 0;
+      border: 2px solid #e5e5e5;
+    }
+
+
+    &__contacts  {
+      padding: 0 60px 33px
+    }
+
+    &__number,
+    &__post  {
+      padding-left: 18px;
+    }
+
+    &__number  {
+      margin-bottom: 40px;
+    }
+
+    
+   
+    &__platforms  {
+      padding-bottom: 66px;
+    }
+
+    &__achivment,
+    &__platform  {
+      padding-left: 119px;
+      margin-bottom: 57px;      
+      &:last-child  {
+        margin-bottom: 0;
+      }      
+    }
+  
+    &__surname-field,
+    &__name-field,
+    &__patronimic-field,
+    &__number-field,
+    &__post-field,
+    &__comment  {
+      padding: 0 20px;
+      height: 59px;      
+      margin-bottom: 21px;
+  
+      &:last-child  {
+        margin-bottom: 0;
+      }
+    }
+
+    &__number-field,
+    &__post-field  {      
+      &:last-child  {
+        margin-bottom: 21px;
+      }  
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 60px;
+        height: 60px;
+        background-color: red;
+      }
+    }    
+    
+  }
+ 
+  .form__checkbox:checked + .form__achivment::before  {
+    position: absolute;
+    content: "";
+    left: 59px;
+    top: -5px;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #e5e5e5;  
+    background: url("../../img/checked.svg") 50% 50% no-repeat;
+    background-color: #ffffff;
+  }
+  
+  .form__checkbox + .form__achivment::before  {
+    position: absolute;
+    content: "";
+    left: 59px;
+    top: -5px;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #e5e5e5;
+    background-color: #ffffff;
+  }
+  
+  .form__radio:checked + .form__platform::before  {
+    position: absolute;
+    content: "";
+    left: 59px;
+    top: -5px;
+    width: 36px;
+    height: 36px;
+    border: 2px solid #e5e5e5;  
+    border-radius: 100%;
+    background-color: #ffffff;
+  }
+  
+  .form__radio:checked + .form__platform::after  {
+    position: absolute;
+    content: "";
+    left: 71px;
+    top: 7px;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    background-color: #d22856;
+  }
+  
+  .form__radio + .form__platform::before  {
+    position: absolute;
+    content: "";
+    left: 59px;
+    top: -5px;
+    width: 36px;
+    height: 36px;
+    border: 2px solid #e5e5e5;
+    border-radius: 100%;
+    background-color: #ffffff;
+  }
+}
+
+@media  (min-width: $desktop-width)  {
+  .form  {
+    width: 940px;
+
+    &__text  {
+      margin-bottom: 89px;
+      padding: 0 90px;
+
+      & span  {
+        display: inline;
+      }
+    }
+
+    
+  }  
+}
