@@ -1,6 +1,3 @@
 # pink-project
 Пинк
-Тест
-Ветка адаптив
-ключ
-+test
+http://unbronce-pink.surge.sh/
