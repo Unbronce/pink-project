@@ -211,6 +211,22 @@
     text-transform: uppercase;
     border: 2px solid #2aab6d;
     background-color: #2aab6d;
+    cursor: pointer;
+
+    &:hover  {
+      background-color: #1c9b5e;
+    }
+
+    &:active {
+      color: rgba($color: #fff, $alpha: 0.3);
+      background-color: #1c9b5e;
+    }
+
+    &:disabled {
+      border: 2px solid #e5e5e5;
+      background-color: #e5e5e5;
+      cursor: default;
+    }
   }
 
   &__attention  {
@@ -568,6 +584,18 @@
     &__name-field  {
       margin-bottom: 58px;
     }
+
+    &__surname-field:hover,
+    &__name-field:hover,
+    &__patronimic-field:hover {
+      border-color: #283645;
+    }
+
+    &__surname-field:focus,
+    &__name-field:focus,
+    &__patronimic-field:focus {
+      border-color: #d22856;
+    }
     
       //   platforms
     &__platforms  {
@@ -684,9 +712,7 @@
 
     &__container--bottom-order  {
       width: 940px;
-    }
-    
-
+    }  
   }  
 
   .form__radio:checked + .form__platform::before  {
@@ -704,9 +730,37 @@
   .form__checkbox:checked + .form__achivment::before  {
     left: 0;
   }
+
+  
   
   .form__checkbox + .form__achivment::before  {
     left: 0;
   }
+
+  .form__radio:checked + .form__platform:hover::before,
+  .form__radio + .form__platform:hover::before  {
+    border-color: #283645;
+  }
+
+  .form__radio:checked + .form__platform:active::before,
+  .form__radio + .form__platform:active::before  {
+    border-color: #d22856;
+  }
+  
+  .form__checkbox + .form__achivment:hover::before,
+  .form__checkbox:checked + .form__achivment:hover::before  {
+    border-color: #283645;
+  }
+
+  .form__checkbox + .form__achivment:active::before,
+  .form__checkbox:checked + .form__achivment:active::before  {
+    border-color: #d22856;
+  }
+
+
+  //#283645
+  //#d22856
+
+  *  {outline: none;}
 
 }

@@ -29,8 +29,7 @@
 
 @media (min-width: $desktop-width) {
   .site-list  {
-    display: flex;    
-    justify-content: space-between;
+    display: flex;  
     padding: 0;
     width: 621px;   
   }
@@ -38,9 +37,10 @@
   .site-list  {
     font-weight: 400;
   }
+
   .site-list a  {
-    display: inline;
-    padding: 0;
+    display: block;
+    padding: 46px 30px;
     font-size: 18px;
     line-height: 18px;
     text-transform: none;
@@ -48,8 +48,29 @@
     background-color: transparent;
     border-top: none;
     border-bottom: none;
+    &[href]:hover {
+      color: #d22856;
+    }
+    &[href]:active  {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
   .site-list__item {    
+  }
+
+  .site-list__link  {
+    &--active  {
+      position: relative;
+      &::after  {
+        position: absolute;
+        content: "";
+        left: 30px;
+        right: 30px;
+        bottom: 31px;
+        height: 2px;
+        background-color: #fff;
+      }
+    }
   }
 }

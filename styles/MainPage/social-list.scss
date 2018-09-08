@@ -42,3 +42,21 @@
     }
   }
 }
+
+@media (min-width: $desktop-width)  {
+  .social-list  {
+    &__link  {
+      &:hover  {
+        border-color: #283645;
+      }
+
+      &:active  {
+        border-color: rgba($color: #283645, $alpha: 0.1);
+      }
+
+      &:active path  {
+        fill: rgba($color: #d22856, $alpha: 0.1);
+      }
+    }    
+  }
+}

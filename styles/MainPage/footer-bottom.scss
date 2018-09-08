@@ -79,5 +79,13 @@
       width: 960px;
     }
 
+    &__link:hover path  {
+      fill: #283645;
+    }
+
+    &__link:active path  {
+      fill: rgba($color: #283645, $alpha: 0.3);
+    }
+
   }
 }

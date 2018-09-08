@@ -117,6 +117,18 @@
     &__visit-us  {
       margin-bottom: 0;
     }
+
+    &__mail  {
+      &:hover  {
+        color: #283645;
+        text-decoration: underline;
+      }
+
+      &:active  {
+        color: rgba($color: #283645, $alpha: 0.3);
+        text-decoration: none;
+      }
+    }
   }
 }
 
