@@ -5,8 +5,9 @@
 .reviews {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
   text-align: center;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .reviews__name {
@@ -33,6 +34,9 @@
 
 
 @media  (min-width: $tablet-width)  {
+  .reviews  {
+    width: 620px;
+  }
   .reviews__wrapper  {
     display: flex;
     flex-direction: column;
@@ -63,6 +67,7 @@
 
 @media  (min-width: $desktop-width)  {
   .reviews  {
+    width: 940px;
     background: url("../../img/quotes.svg") center 72px no-repeat; 
   }
 

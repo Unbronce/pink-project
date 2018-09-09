@@ -45,13 +45,14 @@
     align-items: flex-end;
     text-align: left;
     width: 620px;
-  }
+  } 
 
-  .service-list__item {
+  .service-list__caption {
     width: 310px;
   }
 
   .service-list__description  {
+    width: 310px;
     padding: 0;
   }
 
@@ -75,6 +76,14 @@
     justify-content: space-between;
     align-items: flex-start;
     width: 872px;
+  }
+
+  .service-list__caption {
+    width: auto;
+  }
+
+  .service-list__description  {
+    width: auto;    
   }
 
   .service-list__item  {
