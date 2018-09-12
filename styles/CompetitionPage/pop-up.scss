@@ -1,0 +1,149 @@
+.pop-up  {
+  position: fixed;
+  z-index: 50;
+  left: 50%;
+  top: 50%;
+  margin-top: -160px;
+  margin-left: -160px;
+
+  &__failure  {
+    display: none;
+    padding: 46px 20px 0;
+    width: 320px;    
+    min-height: 289px;
+    background-color: #fff;
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  }
+
+  &__success  {
+    display: none;
+    padding: 46px 20px 0;
+    width: 320px;    
+    min-height: 380px;
+    background-color: #fff;
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  }
+
+  &__attention  {
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #000000;    
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+
+  &__text  {
+    margin: 0;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #283645;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  &__btn  {
+    display: block;
+    margin: 0 auto;
+    width: 280px;
+    height: 59px;
+    color: #ffffff;
+    font: inherit;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 2px solid #2aab6d;
+    background-color: #2aab6d;
+  }
+
+  &__wrapper  {
+    margin: 0 -20px;
+    padding: 50px 0;
+    background-color: #f2f2f2;
+  }
+}
+
+@media (min-width: $tablet-width)  {
+  .pop-up  {
+    left: 50%;
+    top: 50%;
+    margin-top: -160px;
+    margin-left: -230px;
+  
+    &__failure  {      
+      padding: 46px 70px 0;
+      width: 460px;    
+      min-height: 387px;
+    }
+  
+    &__success  {
+      padding: 46px 70px 0;
+      width: 460px;    
+      min-height: 432px;
+    }
+  
+    &__attention  {
+      display: block;
+      margin-bottom: 35px;
+      padding: 0 30px; 
+      font-size: 30px;
+      line-height: 40px;      
+    }
+  
+    &__text  {
+      margin-bottom: 45px;
+      font-size: 18px;
+    }
+  
+    &__btn  {
+      width: 300px;
+    }
+  
+    &__wrapper  {
+      margin: 0 -70px;
+    }
+  }
+
+}
+
+@media (min-width: $desktop-width)  {
+  .pop-up  {
+    margin-top: -160px;
+    margin-left: -390px;
+  
+    &__failure  {   
+    }
+  
+    &__success  {      
+      padding: 46px 160px 0;
+      width: 780px;   
+      min-height: 370px;
+    }
+  
+    &__attention  {
+      display: block;
+      margin-bottom: 35px;
+      padding: 0 30px; 
+      font-size: 30px;
+      line-height: 40px;      
+    }
+  
+    &__text  {
+      margin-bottom: 45px;
+      font-size: 18px;
+    }
+  
+    &__btn  {
+      width: 300px;
+    }
+  
+    &__wrapper  {
+      margin: 0 -160px;
+    }
+  }
+
+}
