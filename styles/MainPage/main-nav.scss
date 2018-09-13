@@ -26,29 +26,6 @@
   border: none;
 }
 
-.main-nav--closed .main-nav__toggle::before  {
-  content: "";
-  position: absolute;
-  top: 21px;
-  right: 5px;
-
-  width: 50px;
-  height: 4px;
-
-  background-color: #fff;
-  box-shadow: 0 10px 0 0 rgb(255, 255, 255), 0 20px 0 0 rgb(255, 255, 255);
-}
-
-.main-nav--closed .main-nav__toggle:hover::before {
-  background-color: #d22856;
-  box-shadow: 0 10px 0 0 rgb(210, 40, 86), 0 20px 0 0 rgb(210, 40, 86);
-}
-
-.main-nav--closed .main-nav__toggle:active::before {
-  background-color: rgba(210, 40, 86, 0.3);
-  box-shadow: 0 10px 0 0 rgba(210, 40, 86, 0.3), 0 20px 0 0 rgba(210, 40, 86, 0.3);
-}
-
 .main-nav--opened .main-nav__toggle  {
   top: -70px;
   right: 20px;
@@ -88,6 +65,68 @@
   
 }
 
+.main-nav--closed .main-nav__toggle::before  {
+  content: "";
+  position: absolute;
+  top: 21px;
+  right: 5px;
+
+  width: 50px;
+  height: 4px;
+
+  background-color: #fff;
+  box-shadow: 0 10px 0 0 rgb(255, 255, 255), 0 20px 0 0 rgb(255, 255, 255);
+}
+
+.main-nav--closed .main-nav__toggle:hover::before {
+  background-color: #d22856;
+  box-shadow: 0 10px 0 0 rgb(210, 40, 86), 0 20px 0 0 rgb(210, 40, 86);
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: rgba(210, 40, 86, 0.3);
+  box-shadow: 0 10px 0 0 rgba(210, 40, 86, 0.3), 0 20px 0 0 rgba(210, 40, 86, 0.3);
+}
+
+// .main-nav--opened .main-nav__toggle  {
+//   top: -70px;
+//   right: 20px;
+
+//   &::before,
+//   &::after  {
+//     content: "";
+
+//     position: absolute;
+//     top: 30px;
+//     right: 12px;
+
+//     width: 33px;
+//     height: 4px;
+
+//     background-color: #fff;
+//   }
+
+//   &::before  {
+//     transform: rotate(45deg);
+//     box-shadow: none;
+//   }
+
+//   &::after  {
+//     transform: rotate(-45deg);
+//   }
+
+//   &:hover::before,
+//   &:hover::after  {
+//     background-color: #d22856;
+//   }
+
+//   &:active::before,
+//   &:active::after  {
+//     background-color: rgba(210, 40, 86, 0.3);
+//   }
+  
+// }
+
 
 @media (min-width: $tablet-width) {
   .main-nav {
@@ -123,14 +162,14 @@
     display: none;
   }
 
-  .main-nav--nojs .main-nav__list  {
-    display: block;
-    background-color: #283645;
-  }
+  // .main-nav--nojs .main-nav__list  {
+  //   display: block;
+  //   background-color: #283645;
+  // }
 
-  .main-nav--nojs .site-list__item {
-    display: block;
-  }
+  // .main-nav--nojs .site-list__item {
+  //   display: block;
+  // }
 
 }
 
