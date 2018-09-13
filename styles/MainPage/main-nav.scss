@@ -123,6 +123,15 @@
     display: none;
   }
 
+  .main-nav--nojs .main-nav__list  {
+    display: block;
+    background-color: #283645;
+  }
+
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
+
 }
 
 @media (min-width: $desktop-width)  {
